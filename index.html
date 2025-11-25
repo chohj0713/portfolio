@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포트폴리오 | 조홍준</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <span class="tagline">
+          <span class="tagline__date">2025년 11월 25일</span>
+          <span class="tagline__note">에 업데이트 했어요.</span>
+        </span>
+        <h1 class="title">조홍준 | 포트폴리오 작업물 스냅샷</h1>
+      </div>
+    </header>
+
+    <section id="gallery" class="grid"></section>
+
+    <section id="about" class="about" role="button" tabindex="0" aria-label="AI 에이전트 제작 설명 보기">
+      <p class="about__text">
+        <svg class="about__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.5" />
+          <circle cx="12" cy="8" r="1.2" fill="currentColor" />
+          <path d="M11.2 11.5h1.2v6h-1.2z" fill="currentColor" />
+        </svg>
+        이 페이지는 AI 에이전트를 활용해 만들었습니다.
+      </p>
+    </section>
+  </div>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="이미지 확대 보기">
+    <div class="modal-shell">
+      <header class="modal-header">
+        <div>
+          <div class="pill" id="modal-index"></div>
+          <strong id="modal-title"></strong>
+        </div>
+        <button class="close" id="modal-close">X</button>
+      </header>
+      <div class="modal-content">
+        <img id="modal-img" alt="">
+        <p class="modal-caption" id="modal-caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
