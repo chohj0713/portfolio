@@ -81,7 +81,7 @@
       file: 'screenshot_vibe_coding.png',
       title: 'AI 에이전트가 만든 페이지',
       caption:
-        'OpenAI의 AI 에이전트인 Codex와 Github Page 기능을 활용하여 만들었습니다.\n이 페이지처럼 현재 운영하는 프로덕트도 간단하게 조작해볼 수 있는 프로토타입을 만들어 유저들에게 피드백을 받고 있습니다.',
+        'OpenAI의 AI 에이전트인 Codex와 Github Page 기능을 활용하여 만들었습니다.\n현업에서도 직접 AI 에이전트 및 다양한 툴을 활용하여 프로토타입을 만들어 유저들에게 피드백을 받고 있습니다.',
     };
     const openAbout = () => openModal(aboutData, 0, aboutData.caption, 'INFO');
     about.addEventListener('click', openAbout);
